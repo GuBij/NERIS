@@ -1,0 +1,2 @@
+period	IMR/M11	IMR/M12	IMR/M07	IMR/M08	IMR/M13	IMR/M09	IMR/M10
+1	63.6332        	65.8832        	62.122         
