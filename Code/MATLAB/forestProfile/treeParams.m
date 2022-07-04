@@ -1,0 +1,24 @@
+ kappa=0.4;
+ LAI=params.LAI;
+ standDensity=params.standDensity;
+ DBH=params.DBH;
+ cdepth=params.canopyDepth;
+ h=params.h;
+ zc=params.zc;
+ zi=params.zi;
+ d=params.d;
+ uStar=params.uStar;
+ mu=params.mu;
+ extCoeff=params.extCoeff;
+ z0=params.z0;
+ z0g=params.z0g;
+ Cd=params.Cd;
+
+ alpha=2*(Cd*LAI)^0.25;
+ a2=4.1920; a3=1.9264; a4=1; a1=LAI*(a2+1)/(hypergeom([a2+1,-a3],a2+2,1/a4)*cdepth);
+ eta=1-exp(-LAI*extCoeff);
+ d=eta*alpha*d/(eta*(alpha-1)+1);
+ TAD=0.5*pi*standDensity*DBH*10^(-4);
+ zStar=2*h-d;
+ uh=uStar/kappa*(log((h-d)/z0)+2/3*log(1+1.5*zStar/(mu*(h-d)))*exp(-mu*(h-d)/zStar)-2/3*log(1+1.5*zStar/(mu*z0))*exp(-mu*z0/zStar));
+ duh=uStar/(kappa*(h-d))*(1-exp(-mu*(h-d)/zStar));
