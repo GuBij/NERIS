@@ -1,0 +1,53 @@
+%parameters for the wind profile
+
+ %tree height
+ h 		20.7
+
+ %leaf area index
+ LAI		1.83 
+
+ %extinction coefficient
+ extCoeff	0.526
+
+ %stand density
+ standDensity	386
+
+ %diameter at breast height
+ DBH		0.316 
+
+ %canopy depth
+ canopyDepth    10
+
+ %effective drag coefficient
+ Cd             0.26
+
+ %calibration height
+ zref		42.85
+
+ %stack height
+ stackHeight	59.85 
+
+ %roughness length
+ z0		1.00
+
+ %ground roughness length
+ z0g            0.25
+
+ %thickness roughness sublayer
+ zStar		41.4
+
+ %month in which the meteo data were recorded
+ month          00
+
+ %day of the month at which the meteo data were recorded
+ day            00
+
+ %Should a constant wind speed be assumed?
+ cstWindSpeed	yes
+
+ %Should a constant wind direction be assumed?
+ cstWindDir	yes
+
+ %dose rate calculated after every outputInterval time steps
+ outputInterval 4500
+

@@ -1,0 +1,42 @@
+/*--------------------------------*- C++ -*----------------------------------*\ 
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.1.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     4.1;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+uStar           1.0382;
+kappa           0.4;
+d               17.5515;
+Cd              0.26;
+LAI             1.83;
+DBH             0.316;
+treeHeight      20.7;
+canopyDepth     10.0;
+extCoeff        0.526;
+standDensity    386.0;
+mu              5.7160;
+zc              19.6024;
+zd              13.0494;
+scale           1.0826;
+zStar           41.4000;
+z0              1.0000;
+z0g             0.2500;
+windDirection   (1.0000 0.0000 0);
+
+Sc              Sc [ 0 0  0 0 0 0 0 ] 0.9;
+Dv              Dv [ 0 2 -1 0 0 0 0 ] 1e-20;
+
+pollutant       yes;
+
+// ************************************************************************* //
