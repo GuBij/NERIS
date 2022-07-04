@@ -1,0 +1,51 @@
+
+ meteofile	meteo<day>.txt;
+
+ terrainModel	forest;
+
+ stackHeight	60.0;
+
+ timeStep	1;
+
+ diameter	2.8;
+
+ flowRate	9.44;
+
+ gasTemp	15.0;
+
+ measureFreq	600;
+
+ noPartPerRel	50000;
+
+ xMax		2000;
+
+ yMax		2000;
+
+ zMax		500;
+
+ sourceStrength	1.5e+11;
+
+ noProcs	20;
+
+ forest
+ {
+    LAI		<LAI>;
+
+    Cd		0.2;
+
+    htree	22.4;
+
+    canopyDepth 10.0;
+
+    zref	69.0;
+
+    standDensity 359;
+
+    DBH		0.29;
+
+    Sct		0.9;
+
+    zrefTemp	114.0;
+
+    zrefTemp0	8.0;
+ }
