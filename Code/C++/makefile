@@ -55,3 +55,4 @@ posdose: $(OBJ5)
 
 clean: 
 	rm include/*.o; rm output/*; rm $(EXE); rm $(EXE2); rm $(EXE3); rm $(EXE4);
+
